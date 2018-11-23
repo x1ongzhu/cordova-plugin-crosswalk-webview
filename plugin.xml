@@ -23,7 +23,7 @@
         <preference name="XWALK_LITEVERSION" default="xwalk_core_library_canary:17+"/>
         <preference name="XWALK_COMMANDLINE" default="--disable-pull-to-refresh-effect"/>
         <preference name="XWALK_MODE" default="embedded" />
-        <preference name="XWALK_MULTIPLEAPK" default="true" />
+        <preference name="XWALK_MULTIPLEAPK" default="false" />
         <config-file target="res/xml/config.xml" parent="/*">
             <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine"/>
             <preference name="xwalkVersion" value="$XWALK_VERSION"/>
@@ -31,7 +31,7 @@
             <preference name="xwalkCommandLine" value="$XWALK_COMMANDLINE"/>
             <preference name="xwalkMode" value="$XWALK_MODE" />
             <preference name="xwalkMultipleApk" value="$XWALK_MULTIPLEAPK" />
-            <preference name="android-minSdkVersion" value="16" />
+            <preference name="android-minSdkVersion" value="19" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
